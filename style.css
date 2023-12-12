@@ -7,12 +7,18 @@ html{
     scroll-behavior: smooth ;
 }
 
-body{
-    background-image: url("https://api.img2html.com/api/getfile/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRoYW5hengxQGdtYWlsLmNvbSIsImZpbGVuYW1lIjoiMC5qcGciLCJleHAiOjIzMzEzNzE3NjZ9.E7O9B8jlgI_zj3398hcHkCqqDs6ESzn83RhaRZyjkno/0.jpg");
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: url("images/pexels-photo-1595241.webp");
     background-size: cover;
-    /* background-size: fill; */
-    /* background-attachment: fixed; */
     background-repeat: no-repeat;
+    transform: scaleX(-1);
 }
 img{
     height: 310px;
@@ -66,7 +72,7 @@ font-size:large;
 
 #Griditems{
     margin-top: -30px;
-    margin-left: 100px;
+    margin-left: 300px;
     width: auto;
     height: 85vh;
     display: grid;
